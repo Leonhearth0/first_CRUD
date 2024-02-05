@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+#adduser {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#adduser label {
+    display: flex;
+    font-weight: bold;
+}
+
+#adduser input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#adduserButton {
+    padding: 10px 20px;
+    background-color: #546CFA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#adduserButton:hover {
+    background-color: #4961eb;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.modifierButton,
+.supprButton,
+#saveButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #546CFA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.modifierButton:hover,
+.supprButton:hover 
+#saveButton{
+    background-color: #4961eb;
+}
+
+.button-container, #savebuttonContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
