@@ -4,6 +4,7 @@ $username = 'root';
 $password = '';
 $dbname = 'projet_crud';
 
+try {
 $db = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -70,7 +71,10 @@ $sql = "SELECT * FROM utilisateurs";
 $statement = $db->prepare($sql);
 $statement->execute();
 
-$utilisateurs = $statement->fetchAll(PDO::FETCH_ASSOC);
+$utilisateurs = $statement->fetchAll(PDO::FETCH_ASSOC);}
+ catch (PDOException $e) {
+    die("Erreur : " . $e->getMessage());
+}
 ?>
 
 
